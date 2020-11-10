@@ -1,18 +1,11 @@
-<button type="button" class="btn btn-primary">Primary</button>
+<div *ngIf="auth.user | async as user; else showLogin">
+  <h1>Hello {{ user.displayName }}!</h1>
+  <button (click)="logout()">Logout</button>
+</div>
+<ng-template #showLogin>
+  <p>Please login.</p>
+  <button (click)="login()">Login with Google</button>
+</ng-template>
 
-<accordion>
-    <accordion-group heading="Static Header">
-      This content is straight in the template.
-    </accordion-group>
-    <accordion-group heading="Another group">
-      <p>Some content</p>
-    </accordion-group>
-    <accordion-group heading="Another group">
-      <p>Some content</p>
-    </accordion-group>
-    <accordion-group heading="Another group">
-      <p>Some content</p>
-    </accordion-group>
-  </accordion>
 
 <router-outlet></router-outlet>
