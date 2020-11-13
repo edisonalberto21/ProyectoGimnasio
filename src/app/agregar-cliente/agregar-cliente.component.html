@@ -1,0 +1,42 @@
+<div class="container mt-5">   
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Agregue el Nombre">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido" placeholder="Agregue el apellido ">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="correo">Correo</label>
+        <input type="email" class="form-control" id="correo" placeholder="Agregue el correo ">
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="cedula">Cédula</label>
+          <input type="text" class="form-control" id="cedula" placeholder="Agregue la cédula">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="fecha">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="fecha" placeholder="Agregue la fecha de nacimiento ">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="telefono">Teléfono</label>
+          <input type="number" class="form-control" id="telefono" placeholder="Agregue el número de telefono ">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="file">Imagen</label>
+        <input type="file" class="form-control-file" id="file" placeholder="agregue la imagen">
+      </div>
+      <div class="col-sm-4">
+        <div class="mb-2">
+          <progressbar [value]="22" type="warning" [striped]="true">22%</progressbar>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>  
