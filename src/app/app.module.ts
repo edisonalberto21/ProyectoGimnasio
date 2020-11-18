@@ -16,6 +16,10 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { PreciosComponent } from './precios/precios.component';
+import { InscripcionComponent } from './inscripcion/inscripcion.component';
+import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-cliente.component';
+//import { AngularFireStorage } from '@angular/fire/storage';
 
 
 
@@ -25,7 +29,10 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
     LoginComponent,
     EncabezadoComponent,
     ListadoClientesComponent,
-    AgregarClienteComponent
+    AgregarClienteComponent,
+    PreciosComponent,
+    InscripcionComponent,
+    SeleccionarClienteComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,8 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
     FormsModule,
     NgxSpinnerModule,
     BsDropdownModule.forRoot(),
-    ProgressbarModule.forRoot()
+    ProgressbarModule.forRoot(),
+   
   ],
   providers: [
     AngularFireAuth,
